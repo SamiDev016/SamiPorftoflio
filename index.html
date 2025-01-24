@@ -23,11 +23,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home" data-lang="en">Home</a><a class="nav-link d-none" href="#home" data-lang="fr">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-lang="en">About</a><a class="nav-link d-none" href="#about" data-lang="fr">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-lang="en">Skills</a><a class="nav-link d-none" href="#skills" data-lang="fr">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" data-lang="en">Portfolio</a><a class="nav-link d-none" href="#portfolio" data-lang="fr">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-lang="en">Contact</a><a class="nav-link d-none" href="#contact" data-lang="fr">Contact</a></li>
+                    <li class="nav-item language-switch">
+                        <button class="btn btn-link nav-link" onclick="switchLanguage('en')" data-lang="fr">EN</button>
+                        <span class="nav-link">|</span>
+                        <button class="btn btn-link nav-link" onclick="switchLanguage('fr')" data-lang="en">FR</button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -39,10 +44,14 @@
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12 text-center">
                     <h1 class="text-white" data-aos="fade-up">Adel Ibrahim Sami</h1>
-                    <p class="lead text-white" data-aos="fade-up" data-aos-delay="200">Flutter Developer | Laravel Full Stack Developer</p>
+                    <p class="lead text-white" data-aos="fade-up" data-aos-delay="200" data-lang="en">Full Stack Developer | Mobile Development Specialist</p>
+                    <p class="lead text-white d-none" data-aos="fade-up" data-aos-delay="200" data-lang="fr">Développeur Full Stack | Spécialiste en Développement Mobile</p>
+                    <p class="text-white mb-4" data-aos="fade-up" data-aos-delay="300">Flutter • Laravel • RESTful APIs • Clean Architecture</p>
                     <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+                        <a href="#portfolio" class="btn btn-primary" data-lang="en">View My Work</a>
+                        <a href="#portfolio" class="btn btn-primary d-none" data-lang="fr">Voir Mes Projets</a>
+                        <a href="#contact" class="btn btn-outline-light" data-lang="en">Contact Me</a>
+                        <a href="#contact" class="btn btn-outline-light d-none" data-lang="fr">Me Contacter</a>
                     </div>
                 </div>
             </div>
@@ -52,33 +61,36 @@
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">About Me</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up" data-lang="en">About Me</h2>
+            <h2 class="text-center mb-5 d-none" data-aos="fade-up" data-lang="fr">À Propos</h2>
             <div class="row align-items-center">
                 <div class="col-lg-4 text-center" data-aos="fade-right">
                     <img src="images/profile.jpg" alt="Adel Ibrahim Sami" class="img-fluid rounded-circle mb-4">
                 </div>
                 <div class="col-lg-8" data-aos="fade-left">
-                    <p class="lead">I am a Flutter Developer with over two years of experience creating cross-platform mobile applications. Based in Reghaia, Algiers, I also have expertise in Laravel for building scalable web solutions. I hold a Master’s degree in IT Software Development from the University of Boumerdes.</p>
+                    <p class="lead" data-lang="en">Experienced Full Stack Developer, specialized in mobile development with Flutter and backend development with Laravel. Passionate about creating high-performance and scalable applications. I am motivated to join a dynamic team to enrich my practical experience, improve my programming skills, and deepen my technical knowledge.</p>
+                    <p class="lead d-none" data-lang="fr">Développeur Full Stack expérimenté, spécialisé dans le développement mobile avec Flutter et le développement backend avec Laravel. Passionné par la création d'applications performantes et évolutives. Je suis motivé à rejoindre une équipe dynamique pour enrichir mon expérience pratique, perfectionner mes compétences en programmation et approfondir mes connaissances techniques.</p>
+                    <div class="cv-download mb-4" data-aos="fade-up">
+                        <a href="assets/CV.pdf" download class="btn btn-primary btn-cv" data-lang="en">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                        <a href="assets/CV.pdf" download class="btn btn-primary btn-cv d-none" data-lang="fr">
+                            <i class="fas fa-download me-2"></i>Télécharger le CV
+                        </a>
+                    </div>
                     <div class="row mt-4">
                         <div class="col-md-6">
-                            <h4>Education</h4>
+                            <h4 data-lang="en">Education</h4>
+                            <h4 class="d-none" data-lang="fr">Formation</h4>
                             <ul class="list-unstyled">
                                 <li class="mb-2">
-                                    <strong>Master's in IT Software Development</strong><br>
-                                    University of Boumerdes, 2025
+                                    <strong>Master 2 TI (Technologie de l'Information)</strong><br>
+                                    Université Mohamed Bougara Boumerdès, 2024<br>
+                                    <strong>Licence ISIL (Ingénieur de système informations et logiciel)</strong><br>
+                                    Université Mohamed Bougara Boumerdès, 2022<br>
+                                    <strong>Baccalauréat Scientifique</strong><br>
+                                    Lycée Hraoua Alger, 2019
                                 </li>
-                                <!-- <li>
-                                    <strong>Bachelor's in IT</strong><br>
-                                    University of Boumerdes, 2021
-                                </li> -->
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>Languages</h4>
-                            <ul class="list-unstyled">
-                                <li>Arabic (Native)</li>
-                                <li>French (Fluent)</li>
-                                <li>English (Advanced)</li>
                             </ul>
                         </div>
                     </div>
@@ -90,7 +102,8 @@
     <!-- Skills Section -->
     <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Skills</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up" data-lang="en">Skills</h2>
+            <h2 class="text-center mb-5 d-none" data-aos="fade-up" data-lang="fr">Compétences</h2>
             <div class="row">
                 <div class="col-md-4" data-aos="fade-up">
                     <div class="skill-card">
@@ -98,36 +111,77 @@
                         <h3>Mobile Development</h3>
                         <ul>
                             <li>Flutter & Dart</li>
-                            <li>Cross-platform Development</li>
-                            <li>UI/UX Design</li>
                             <li>State Management</li>
-                            <li>API Integration</li>
+                            <li>Clean Architecture</li>
+                            <li>RESTful API Integration</li>
+                            <li>Cross-platform Development</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-card">
                         <i class="fas fa-code"></i>
-                        <h3>Backend Development</h3>
+                        <h3>Web Development</h3>
                         <ul>
                             <li>Laravel & PHP</li>
-                            <li>MySQL & PostgreSQL</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap & Tailwind</li>
+                            <li>HTML & CSS</li>
                             <li>RESTful APIs</li>
-                            <li>Database Design</li>
-                            <li>System Architecture</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="skill-card">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Additional Skills</h3>
+                        <i class="fas fa-database"></i>
+                        <h3>Database & Tools</h3>
                         <ul>
-                            <li>Git & GitHub</li>
-                            <li>Problem Solving</li>
-                            <li>Team Collaboration</li>
-                            <li>Time Management</li>
-                            <li>Project Management</li>
+                            <li>MySQL & PostgreSQL</li>
+                            <li>Oracle & SQL Server</li>
+                            <li>MongoDB & Hive DB</li>
+                            <li>Git & GitHub/GitLab</li>
+                            <li>UML Modeling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up" data-lang="en">Professional Experience</h2>
+            <h2 class="text-center mb-5 d-none" data-aos="fade-up" data-lang="fr">Expérience Professionnelle</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <h4>Développeur Full Stack - Sedra Tech</h4>
+                        <p class="timeline-date">2024 (6 mois) - Rouiba, Alger</p>
+                        <ul>
+                            <li>Développement du site e-commerce multi-boutiques jexdé.com et amélioration du site moderndz.com</li>
+                            <li>Création de l'application mobile Bazness, actuellement en exploitation</li>
+                            <li>Maintenance et optimisation des projets pour assurer leur performance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <h4>Développeur Laravel - Tech It Away</h4>
+                        <p class="timeline-date">2024 (6 mois) - Tizi Ouzou</p>
+                        <ul>
+                            <li>Développement d'une application web de gestion des transactions bancaires</li>
+                            <li>Implémentation de fonctionnalités sécurisées</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-content">
+                        <h4>Stage Pratique - Naal El Mouhamadia</h4>
+                        <p class="timeline-date">2022 (6 mois)</p>
+                        <ul>
+                            <li>Développement d'une application web pour la gestion de carrière d'employés</li>
+                            <li>Conception et développement de fonctionnalités de suivi professionnel</li>
                         </ul>
                     </div>
                 </div>
@@ -138,7 +192,8 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">My Projects</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up" data-lang="en">My Projects</h2>
+            <h2 class="text-center mb-5 d-none" data-aos="fade-up" data-lang="fr">Mes Projets</h2>
             <div class="row">
                 <!-- E-commerce Projects -->
                 <div class="col-lg-6 mb-4" data-aos="fade-up">
@@ -208,7 +263,8 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Get In Touch</h2>
+            <h2 class="text-center mb-5" data-aos="fade-up" data-lang="en">Get In Touch</h2>
+            <h2 class="text-center mb-5 d-none" data-aos="fade-up" data-lang="fr">Me Contacter</h2>
             <div class="row">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="contact-info">
@@ -239,17 +295,20 @@
                             <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
-                            <span class="button-text">Send Message</span>
+                            <span class="button-text" data-lang="en">Send Message</span>
+                            <span class="button-text d-none" data-lang="fr">Envoyer le Message</span>
                             <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
                         </button>
                     </form>
                     <!-- Success Message (Hidden by default) -->
                     <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
-                        Message sent successfully! Redirecting...
+                        <p data-lang="en">Message sent successfully! Redirecting...</p>
+                        <p class="d-none" data-lang="fr">Message envoyé avec succès ! Redirection...</p>
                     </div>
                     <!-- Error Message (Hidden by default) -->
                     <div id="errorMessage" class="alert alert-danger mt-3" style="display: none;">
-                        Failed to send message. Please try again.
+                        <p data-lang="en">Failed to send message. Please try again.</p>
+                        <p class="d-none" data-lang="fr">Échec de l'envoi du message. Veuillez réessayer.</p>
                     </div>
                 </div>
             </div>
@@ -323,6 +382,27 @@
                     spinner.classList.add('d-none');
                 });
         }
+
+        function switchLanguage(lang) {
+            // Hide all elements
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.classList.add('d-none');
+            });
+            
+            // Show elements for selected language
+            document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => {
+                el.classList.remove('d-none');
+            });
+
+            // Store language preference
+            localStorage.setItem('preferred-language', lang);
+        }
+
+        // Set initial language based on stored preference or default to English
+        document.addEventListener('DOMContentLoaded', () => {
+            const storedLang = localStorage.getItem('preferred-language') || 'en';
+            switchLanguage(storedLang);
+        });
     </script>
 </body>
 </html>
